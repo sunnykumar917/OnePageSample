@@ -1,0 +1,137 @@
+.navbar {
+  position: fixed; 
+  top: 0;              
+  left: 0;             
+  right: 0;        
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Header Section (Logo and Navbar1) */
+.navbar-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-logo {
+  flex-shrink: 0; 
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  cursor: pointer; 
+  font-size: 1.5rem; 
+}
+
+.navbar1 {
+  display: flex; 
+  align-items: center; 
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0; 
+  padding: 0; 
+}
+
+.navbar-menu li {
+  margin: 0 1rem; 
+  cursor: pointer; 
+  color: white; 
+}
+
+.navbar-menu li:hover {
+  text-decoration: underline;
+}
+
+/* Navbar2 Styles */
+.navbar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 1rem 0;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of items */
+}
+
+.navbar-menu2 {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu2 li {
+  margin: 0 1.5rem; 
+  color: white; 
+  font-size: 1.1rem; 
+  cursor: pointer; 
+  transition: color 0.3s;
+}
+
+.navbar-menu2 li:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-header {
+    justify-content: space-between; 
+  }
+
+  .navbar1 {
+    width: auto; 
+    justify-content: flex-end; 
+  }
+
+  .navbar-menu {
+    flex-direction: column; 
+    width: 100%; 
+    display: none; 
+    position: absolute; 
+    background-color: #333; 
+    top: 60px; /* Adjust based on navbar height */
+    left: 0; 
+    z-index: 1000; 
+    align-items: center; /* Center the menu items */
+  }
+
+  .navbar-menu.open {
+    display: flex; 
+  }
+
+  .navbar-menu li {
+    margin: 0.5rem 0; 
+  }
+
+  .navbar-logo h1 {
+    font-size: 1.2rem; 
+  }
+
+  .navbar2 {
+    padding: 0.5rem 0; 
+  }
+
+  .toggle-button {
+    display: block; /* Show button in mobile view */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 1rem; /* Space between logo and button */
+  }
+}
+
+/* Hide toggle button on desktop */
+@media (min-width: 769px) {
+  .toggle-button {
+    display: none; /* Hide button on larger screens */
+  }
+}

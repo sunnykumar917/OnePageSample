@@ -1,0 +1,140 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.hero_left {
+    max-width: 50%; 
+}
+
+.hero_left h2 {
+    font-size: 4.5rem;
+    margin-left: 5rem;
+    margin-bottom: 20px;
+    color: black; 
+}
+
+.hero_left p {
+    font-size: 16px;
+    margin-left: 5rem;
+    margin-bottom: 30px;
+    color: black; 
+}
+
+.hero_email {
+    display: flex;
+    margin-left: 5rem;
+    margin-bottom: 50px;
+}
+
+.hero_email input {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    width: 40%; 
+    margin-right: 10px; 
+}
+
+.hero_email button {
+    padding: 10px 13px;
+    border: none;
+    background-color:#333; 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.already {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666; 
+    
+}
+
+.already a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.already a:hover {
+    text-decoration: underline; 
+}
+
+.hero-right {
+    max-width: 40%; 
+}
+
+.hero-right img {
+    max-width: 80%; 
+    height: auto; 
+}
+
+@media (max-width: 500px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .hero_left {
+        max-width: 100%;
+        text-align: center;
+        margin: 20px 20px 20px 20px ;
+    }
+
+    .hero_left h2 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .hero_left p {
+        font-size: 14px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero_email {
+        display: flex; /* Use flexbox to align items in a row */
+        align-items: center; /* Center items vertically */
+        margin-left: 0; /* Adjust margin for smaller screens */
+        margin-bottom: 30px; /* Adjust as needed */
+        width: 100%; /* Full width */
+    }
+
+    .hero_email input {
+        width: 60%; /* Adjust input width for better fit */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+
+    .hero_email button {
+        width: 45%; /* Set button width */
+        margin-left: 10px; /* Space between input and button */
+        background-color: #333;
+    }
+
+    .already {
+        font-size: 14px;
+        font-weight: 500;
+        color: #666;
+        margin: -15px 10px 0 20px;
+        
+    }
+    
+    
+
+    .hero-right {
+        max-width: 100%;
+        text-align: center;
+        margin: 0 20px 20px 20px ;
+    }
+
+    .hero-right img {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
